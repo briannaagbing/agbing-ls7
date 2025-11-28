@@ -1,0 +1,20 @@
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import StyledPageWrapper from '../../components/StyledPageWrapper';
+
+export default function BasicAlerts() {
+    return (
+        <StyledPageWrapper
+            category="feedback"
+            title="Alert Severity"
+            subtitle="Display alerts with different severity levels: success, info, warning, and error"
+        >
+            <Stack sx={{ width: '100%' }} spacing={2}>
+                <Alert severity="success">This is a success Alert.</Alert>
+                <Alert severity="info">This is an info Alert.</Alert>
+                <Alert severity="warning">This is a warning Alert.</Alert>
+                <Alert severity="error">This is an error Alert.</Alert>
+            </Stack>
+        </StyledPageWrapper>
+    );
+}
